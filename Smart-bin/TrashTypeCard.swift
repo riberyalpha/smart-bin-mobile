@@ -23,8 +23,12 @@ struct test: View {
                 }
             }
             .onAppear {
-                trashTypeService.fetchTrashType()
+                trashTypeService.startFetchingTrashType()
             }
+            .onDisappear {
+                trashTypeService.stopFetchingTrashType()
+            }
+
         }
     }
 }

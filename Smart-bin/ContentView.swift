@@ -43,7 +43,10 @@ struct ContentView: View {
         }
         .navigationTitle("Smart Bin") // Título de la vista de navegación
         .onAppear {
-            trashTypeService.fetchTrashType()
+            trashTypeService.startFetchingTrashType()
+        }
+        .onDisappear {
+            trashTypeService.stopFetchingTrashType()
         }
 
     }
