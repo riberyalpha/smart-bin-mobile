@@ -28,30 +28,38 @@ struct ContentView: View {
                     
                     if let trashType = trashTypeService.trashType {
                         NavigationLink(destination: TrashTypeCardViewWrapper(trashType: trashType)) {
-                            DeviceCard(description: "Cesto de Basura")
+                            DeviceCard(description: "Cesto de Basura", isOn: $trashTypeService.isConnected)
                         }
                     } else {
-                        Text("Cargando datos...")
-                            .font(.title)
-                            .foregroundColor(.gray)
-                            .padding()
+                        VStack {
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(Color.gray.opacity(0.2))
+                                .frame(height: 100) // Ajusta la altura según sea necesario
+                                .overlay(
+                                    VStack {
+                                        ProgressView() // Círculo de carga
+                                            .progressViewStyle(CircularProgressViewStyle(tint: .gray))
+                                            .scaleEffect(1.5) // Tamaño del círculo
+                                        }
+                                )
+                                .padding()
+                        }
                     }
-                    
                 }
                 Spacer()
             }
         }
-        .navigationTitle("Smart Bin") // Título de la vista de navegación
+        .navigationTitle("Smart Bin")
         .onAppear {
             trashTypeService.startFetchingTrashType()
         }
         .onDisappear {
             trashTypeService.stopFetchingTrashType()
         }
-
     }
-
 }
+
+
 
 #Preview {
     ContentView()
