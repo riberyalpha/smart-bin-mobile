@@ -30,7 +30,6 @@ class TrashTypeService: ObservableObject {
     }
     
     private func fetchTrashType() {
-        //guard let url = URL(string: "http://192.168.1.231:5001/api/trash_type") else { return }
         guard let url = URL(string: "http://127.0.0.1:5001/api/trash_type") else { return }
         
         var request = URLRequest(url: url)

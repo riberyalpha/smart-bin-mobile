@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B715A25E2C64653A00439190 /* ViewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715A25D2C64653A00439190 /* ViewDevice.swift */; };
 		B76BFC9A2C5EEBAB006E4C4E /* Smart_binApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFC992C5EEBAB006E4C4E /* Smart_binApp.swift */; };
 		B76BFC9C2C5EEBAB006E4C4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFC9B2C5EEBAB006E4C4E /* ContentView.swift */; };
 		B76BFC9E2C5EEBAD006E4C4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76BFC9D2C5EEBAD006E4C4E /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		B76BFCB52C5EEBAD006E4C4E /* Smart_binUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFCB42C5EEBAD006E4C4E /* Smart_binUITests.swift */; };
 		B76BFCB72C5EEBAD006E4C4E /* Smart_binUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFCB62C5EEBAD006E4C4E /* Smart_binUITestsLaunchTests.swift */; };
 		B76BFCC62C5EF592006E4C4E /* DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFCC52C5EF592006E4C4E /* DeviceCard.swift */; };
-		B76BFCC82C5F0880006E4C4E /* ViewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFCC72C5F0880006E4C4E /* ViewDevice.swift */; };
 		B76BFD002C5F116C006E4C4E /* TrashTypeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFCFF2C5F116C006E4C4E /* TrashTypeCard.swift */; };
 		B76BFD022C5F37B2006E4C4E /* TrashType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFD012C5F37B2006E4C4E /* TrashType.swift */; };
 		B76BFD042C5F37F8006E4C4E /* TrashTypeCardViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFD032C5F37F8006E4C4E /* TrashTypeCardViewWrapper.swift */; };
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B715A25D2C64653A00439190 /* ViewDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewDevice.swift; path = ../../../../../.Trash/ViewDevice.swift; sourceTree = "<group>"; };
 		B76BFC962C5EEBAB006E4C4E /* Smart-bin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-bin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76BFC992C5EEBAB006E4C4E /* Smart_binApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_binApp.swift; sourceTree = "<group>"; };
 		B76BFC9B2C5EEBAB006E4C4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		B76BFCB42C5EEBAD006E4C4E /* Smart_binUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_binUITests.swift; sourceTree = "<group>"; };
 		B76BFCB62C5EEBAD006E4C4E /* Smart_binUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_binUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B76BFCC52C5EF592006E4C4E /* DeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCard.swift; sourceTree = "<group>"; };
-		B76BFCC72C5F0880006E4C4E /* ViewDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDevice.swift; sourceTree = "<group>"; };
 		B76BFCFF2C5F116C006E4C4E /* TrashTypeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashTypeCard.swift; sourceTree = "<group>"; };
 		B76BFD012C5F37B2006E4C4E /* TrashType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashType.swift; sourceTree = "<group>"; };
 		B76BFD032C5F37F8006E4C4E /* TrashTypeCardViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashTypeCardViewWrapper.swift; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 				B76BFC9B2C5EEBAB006E4C4E /* ContentView.swift */,
 				B76BFD032C5F37F8006E4C4E /* TrashTypeCardViewWrapper.swift */,
 				B76BFD012C5F37B2006E4C4E /* TrashType.swift */,
+				B715A25D2C64653A00439190 /* ViewDevice.swift */,
 				B76BFCFF2C5F116C006E4C4E /* TrashTypeCard.swift */,
-				B76BFCC72C5F0880006E4C4E /* ViewDevice.swift */,
 				B76BFC9D2C5EEBAD006E4C4E /* Assets.xcassets */,
 				B76BFC9F2C5EEBAD006E4C4E /* Preview Content */,
 			);
@@ -274,9 +274,9 @@
 			files = (
 				B76BFD042C5F37F8006E4C4E /* TrashTypeCardViewWrapper.swift in Sources */,
 				B76BFC9C2C5EEBAB006E4C4E /* ContentView.swift in Sources */,
+				B715A25E2C64653A00439190 /* ViewDevice.swift in Sources */,
 				B76BFD002C5F116C006E4C4E /* TrashTypeCard.swift in Sources */,
 				B76BFCC62C5EF592006E4C4E /* DeviceCard.swift in Sources */,
-				B76BFCC82C5F0880006E4C4E /* ViewDevice.swift in Sources */,
 				B76BFD022C5F37B2006E4C4E /* TrashType.swift in Sources */,
 				B76BFC9A2C5EEBAB006E4C4E /* Smart_binApp.swift in Sources */,
 			);
@@ -442,6 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart-bin/Preview Content\"";
+				DEVELOPMENT_TEAM = QALACDZ5F6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -470,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Smart-bin/Preview Content\"";
+				DEVELOPMENT_TEAM = QALACDZ5F6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
